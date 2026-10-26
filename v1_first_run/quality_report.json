@@ -1,0 +1,156 @@
+{
+ "n_cases": 60,
+ "n_groups": 48,
+ "n_labels": 300,
+ "status_by_field": {
+  "check_in": {
+   "missing": 11,
+   "match": 40,
+   "mismatch": 9
+  },
+  "check_out": {
+   "mismatch": 8,
+   "ambiguous": 2,
+   "match": 38,
+   "missing": 12
+  },
+  "room": {
+   "mismatch": 19,
+   "ambiguous": 6,
+   "match": 28,
+   "missing": 7
+  },
+  "guests": {
+   "mismatch": 18,
+   "match": 33,
+   "ambiguous": 2,
+   "missing": 7
+  },
+  "meal": {
+   "match": 30,
+   "mismatch": 14,
+   "missing": 10,
+   "ambiguous": 6
+  }
+ },
+ "status_total": {
+  "missing": 47,
+  "match": 169,
+  "mismatch": 68,
+  "ambiguous": 16
+ },
+ "null_by_style": {
+  "formal|check_in": [
+   6,
+   32
+  ],
+  "formal|check_out": [
+   9,
+   32
+  ],
+  "formal|room": [
+   8,
+   32
+  ],
+  "formal|guests": [
+   4,
+   32
+  ],
+  "formal|meal": [
+   8,
+   32
+  ],
+  "short|check_in": [
+   5,
+   28
+  ],
+  "short|check_out": [
+   5,
+   28
+  ],
+  "short|room": [
+   5,
+   28
+  ],
+  "short|guests": [
+   5,
+   28
+  ],
+  "short|meal": [
+   8,
+   28
+  ]
+ },
+ "null_by_style_total": {
+  "formal": [
+   35,
+   160,
+   0.219
+  ],
+  "short": [
+   28,
+   140,
+   0.2
+  ]
+ },
+ "null_overall": [
+  63,
+  300,
+  0.21
+ ],
+ "label_errors": [],
+ "logic_violations": [
+  "C050"
+ ],
+ "stay_days": {
+  "min": 1,
+  "max": 12,
+  "mean": 6.78
+ },
+ "guests": {
+  "3": 12,
+  "1": 12,
+  "2": 26,
+  "4": 10
+ },
+ "text_len": {
+  "min": 55,
+  "max": 221
+ },
+ "exact_dup_texts": 0,
+ "near_dup_pairs_jaccard>=0.8": 0,
+ "near_dup_detail": [],
+ "groups_with_2_replies": 12,
+ "split_cases": {
+  "train": 33,
+  "val": 13,
+  "test": 14
+ },
+ "status_by_split": {
+  "train": {
+   "missing": 25,
+   "mismatch": 42,
+   "match": 90,
+   "ambiguous": 8
+  },
+  "val": {
+   "mismatch": 11,
+   "match": 37,
+   "missing": 14,
+   "ambiguous": 3
+  },
+  "test": {
+   "match": 42,
+   "mismatch": 15,
+   "missing": 8,
+   "ambiguous": 5
+  }
+ },
+ "test_ambiguous_by_field": {
+  "room": 2,
+  "meal": 3
+ },
+ "all_match_cases": 0,
+ "cases_without_any_problem_field": 0,
+ "cases_with_typo_candidates": "n/a"
+}
