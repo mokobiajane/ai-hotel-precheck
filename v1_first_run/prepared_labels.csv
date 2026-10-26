@@ -1,0 +1,301 @@
+case_id,group_id,split,field,booking_value,extracted_value,status,evidence
+C001,G01,train,check_in,2027-03-02,,missing,
+C001,G01,train,check_out,2027-03-08,2027-03-10,mismatch,check-out on 10 March 2027
+C001,G01,train,room,Single,Family Room,mismatch,a family room
+C001,G01,train,guests,3,2,mismatch,two guests
+C001,G01,train,meal,RO,RO,match,room only
+C002,G01,train,check_in,2027-03-02,2027-03-02,match,check-in on 2 March 2027
+C002,G01,train,check_out,2027-03-08,,ambiguous,departure on 08/03
+C002,G01,train,room,Single,,ambiguous,"a double or twin room, to be assigned on arrival"
+C002,G01,train,guests,3,3,match,three guests
+C002,G01,train,meal,RO,FB,mismatch,all three meals included
+C003,G02,train,check_in,2027-07-06,,missing,
+C003,G02,train,check_out,2027-07-14,2027-07-14,match,check-out on 14/07/2027
+C003,G02,train,room,Family Room,Family Room,match,a family room
+C003,G02,train,guests,1,2,mismatch,two guests
+C003,G02,train,meal,FB,,missing,
+C004,G02,train,check_in,2027-07-06,,missing,
+C004,G02,train,check_out,2027-07-14,2027-07-14,match,check-out on 14/07/2027
+C004,G02,train,room,Family Room,Family Room,match,a family room
+C004,G02,train,guests,1,1,match,one guest
+C004,G02,train,meal,FB,,missing,
+C005,G03,val,check_in,2027-08-29,2027-08-30,mismatch,check-in on 30/08/2027
+C005,G03,val,check_out,2027-09-10,2027-09-10,match,check-out on 10 September 2027
+C005,G03,val,room,Single,Single,match,single room
+C005,G03,val,guests,2,2,match,two gusets
+C005,G03,val,meal,AI,,missing,
+C006,G03,val,check_in,2027-08-29,2027-08-29,match,check-in on 29 August 2027
+C006,G03,val,check_out,2027-09-10,2027-09-10,match,check-out on 10 September 2027
+C006,G03,val,room,Single,Standard Double,mismatch,double room (standard)
+C006,G03,val,guests,2,,ambiguous,two adults and possiblya  child
+C006,G03,val,meal,AI,HB,mismatch,breakfast and dinner included
+C007,G04,test,check_in,2027-02-02,2027-02-02,match,check-in on 2 February 2027
+C007,G04,test,check_out,2027-02-13,2027-02-13,match,check-out on 2027-0-213
+C007,G04,test,room,Deluxe Double,Standard Double,mismatch,a standard double
+C007,G04,test,guests,2,2,match,two guests
+C007,G04,test,meal,HB,,missing,
+C008,G04,test,check_in,2027-02-02,2027-02-02,match,check-in on 02/02/2027
+C008,G04,test,check_out,2027-02-13,,missing,
+C008,G04,test,room,Deluxe Double,,ambiguous,"a double or twin room, to be assigned on arrival"
+C008,G04,test,guests,2,1,mismatch,one guest
+C008,G04,test,meal,HB,HB,match,half board
+C009,G05,test,check_in,2027-03-23,2027-03-23,match,check-in on 2027-03-23
+C009,G05,test,check_out,2027-03-26,2027-03-26,match,check-out on 2027-03-26
+C009,G05,test,room,Single,Single,match,singler oom
+C009,G05,test,guests,2,1,mismatch,one ugest
+C009,G05,test,meal,AI,AI,match,all-inclusive package
+C010,G05,test,check_in,2027-03-23,2027-03-22,mismatch,check-in on 22 March 2027
+C010,G05,test,check_out,2027-03-26,2027-03-26,match,check-out on 2027-03-26
+C010,G05,test,room,Single,Single,match,a snigle room
+C010,G05,test,guests,2,2,match,two guests
+C010,G05,test,meal,AI,,missing,
+C011,G06,val,check_in,2027-09-05,,missing,
+C011,G06,val,check_out,2027-09-17,2027-09-17,match,check-out on 2027-09-17
+C011,G06,val,room,Suite,,missing,
+C011,G06,val,guests,1,1,match,one guest
+C011,G06,val,meal,BB,BB,match,bed and breakfast
+C012,G06,val,check_in,2027-09-05,2027-09-05,match,check-in on 5 September 2027
+C012,G06,val,check_out,2027-09-17,,missing,
+C012,G06,val,room,Suite,Suite,match,junior suite
+C012,G06,val,guests,1,1,match,one guest
+C012,G06,val,meal,BB,,missing,
+C013,G07,test,check_in,2027-04-20,2027-04-20,match,check-in on 20/04/2027
+C013,G07,test,check_out,2027-04-24,2027-04-24,match,check-out on 2027-04-24
+C013,G07,test,room,Standard Double,Family Room,mismatch,family room
+C013,G07,test,guests,1,1,match,one guest
+C013,G07,test,meal,FB,HB,mismatch,breakfast and dinner included
+C014,G07,test,check_in,2027-04-20,2027-04-20,match,check-in on 02/04/2027
+C014,G07,test,check_out,2027-04-24,2027-04-23,mismatch,check-out on 23/04/2027
+C014,G07,test,room,Standard Double,Standard Double,match,double room (standard)
+C014,G07,test,guests,1,1,match,one guest
+C014,G07,test,meal,FB,FB,match,all three meal sincluded
+C015,G08,val,check_in,2027-02-19,2027-02-22,mismatch,check-in on 22 February 2027
+C015,G08,val,check_out,2027-02-23,2027-02-23,match,check-out on 23/02/2027
+C015,G08,val,room,Standard Double,Suite,mismatch,a suite
+C015,G08,val,guests,2,3,mismatch,three guests
+C015,G08,val,meal,RO,,missing,
+C016,G08,val,check_in,2027-02-19,2027-02-19,match,check-in on 19 February2 027
+C016,G08,val,check_out,2027-02-23,2027-02-23,match,check-out on 2027-02-23
+C016,G08,val,room,Standard Double,Standard Double,match,a standard double
+C016,G08,val,guests,2,,missing,
+C016,G08,val,meal,RO,RO,match,without meals
+C017,G09,train,check_in,2027-04-12,2027-04-10,mismatch,check-in on 2027-04-10
+C017,G09,train,check_out,2027-04-21,2027-04-21,match,check-out on 21/04/2027
+C017,G09,train,room,Standard Double,Standard Double,match,double room (standard)
+C017,G09,train,guests,4,4,match,four guests
+C017,G09,train,meal,RO,RO,match,without meals
+C018,G09,train,check_in,2027-04-12,,missing,
+C018,G09,train,check_out,2027-04-21,,missing,
+C018,G09,train,room,Standard Double,Standard Double,match,standard double room
+C018,G09,train,guests,4,4,match,four guests
+C018,G09,train,meal,RO,RO,match,room only
+C019,G10,test,check_in,2027-09-21,2027-09-21,match,check-in on 2027-09-21
+C019,G10,test,check_out,2027-09-26,2027-09-26,match,check-out on 2027-09-26
+C019,G10,test,room,Deluxe Double,Standard Twin,mismatch,a standard twin
+C019,G10,test,guests,4,4,match,four guests
+C019,G10,test,meal,AI,,ambiguous,breakfast can be added at an extra charge
+C020,G10,test,check_in,2027-09-21,2027-09-21,match,check-in on 21 September 2027
+C020,G10,test,check_out,2027-09-26,2027-09-26,match,check-out on 26/09/2027
+C020,G10,test,room,Deluxe Double,Deluxe Double,match,a deluxe double
+C020,G10,test,guests,4,,missing,
+C020,G10,test,meal,AI,,ambiguous,breakfast can be added at an extra charge
+C021,G11,train,check_in,2027-02-13,2027-02-11,mismatch,check-in on 2027-02-11
+C021,G11,train,check_out,2027-02-18,,missing,
+C021,G11,train,room,Deluxe Double,Family Room,mismatch,family room
+C021,G11,train,guests,3,3,match,three guests
+C021,G11,train,meal,HB,HB,match,half board
+C022,G11,train,check_in,2027-02-13,2027-02-13,match,check-in on 13 February 2027
+C022,G11,train,check_out,2027-02-18,2027-02-17,mismatch,check-out on 2027-02-17
+C022,G11,train,room,Deluxe Double,Deluxe Double,match,a deluxe double
+C022,G11,train,guests,3,,ambiguous,two adults and possibly a child
+C022,G11,train,meal,HB,,missing,
+C023,G12,train,check_in,2027-08-05,2027-08-05,match,check-in on 5 August 2027
+C023,G12,train,check_out,2027-08-11,2027-08-11,match,check-out on 2027-08-11
+C023,G12,train,room,Single,,missing,
+C023,G12,train,guests,2,1,mismatch,one guest
+C023,G12,train,meal,AI,AI,match,all-inclusive package
+C024,G12,train,check_in,2027-08-05,2027-08-05,match,check-in on 5 August 2027
+C024,G12,train,check_out,2027-08-11,,missing,
+C024,G12,train,room,Single,Family Room,mismatch,a family room
+C024,G12,train,guests,2,3,mismatch,three guests
+C024,G12,train,meal,AI,AI,match,all inclusive
+C025,G13,train,check_in,2027-02-12,,missing,
+C025,G13,train,check_out,2027-02-14,2027-02-14,match,check-out on 14 February 2027
+C025,G13,train,room,Standard Double,Single,mismatch,a single room
+C025,G13,train,guests,2,2,match,two guests
+C025,G13,train,meal,HB,HB,match,breakfast and dinner included
+C026,G14,val,check_in,2027-04-19,2027-04-19,match,check-in on 19 April 2027
+C026,G14,val,check_out,2027-04-22,2027-04-22,match,check-out on 22 April 2027
+C026,G14,val,room,Family Room,Deluxe Double,mismatch,deluxe double room
+C026,G14,val,guests,4,4,match,four guests
+C026,G14,val,meal,AI,AI,match,all-inclusive package
+C027,G15,train,check_in,2027-07-29,2027-07-29,match,check-in on 29/07/2027
+C027,G15,train,check_out,2027-08-04,,ambiguous,departure on 04/08
+C027,G15,train,room,Standard Double,Standard Double,match,a standard double
+C027,G15,train,guests,4,4,match,four guests
+C027,G15,train,meal,FB,AI,mismatch,all-inclusive package
+C028,G16,train,check_in,2027-05-18,2027-05-19,mismatch,check-in on 2027-05-19
+C028,G16,train,check_out,2027-05-24,2027-05-24,match,check-out on 2027-05-24
+C028,G16,train,room,Standard Double,Standard Double,match,standard double room
+C028,G16,train,guests,2,2,match,two guests
+C028,G16,train,meal,FB,RO,mismatch,without meals
+C029,G17,train,check_in,2027-05-19,2027-05-19,match,check-in on 19 May 2027
+C029,G17,train,check_out,2027-05-26,2027-05-26,match,check-out on 26 May 2027
+C029,G17,train,room,Standard Double,Standard Double,match,double room (standard)
+C029,G17,train,guests,2,,missing,
+C029,G17,train,meal,AI,AI,match,all-inclusive package
+C030,G18,train,check_in,2027-08-27,2027-08-27,match,check-in on 270/8/2027
+C030,G18,train,check_out,2027-08-31,,missing,
+C030,G18,train,room,Deluxe Double,Suite,mismatch,a suite
+C030,G18,train,guests,2,3,mismatch,three guests
+C030,G18,train,meal,AI,HB,mismatch,half obard
+C031,G19,train,check_in,2027-02-24,2027-02-24,match,check-in on 24/02/2027
+C031,G19,train,check_out,2027-03-06,2027-03-06,match,check-out on 2027-03-06
+C031,G19,train,room,Standard Twin,Standard Twin,match,a standard twin
+C031,G19,train,guests,1,2,mismatch,two guests
+C031,G19,train,meal,FB,BB,mismatch,bed and breakfast
+C032,G20,train,check_in,2027-01-18,2027-01-18,match,check-in on 18/01/2027
+C032,G20,train,check_out,2027-01-23,2027-01-23,match,check-out on 2027-01-23
+C032,G20,train,room,Deluxe Double,,missing,
+C032,G20,train,guests,2,3,mismatch,three guests
+C032,G20,train,meal,BB,BB,match,bed and breakfast
+C033,G21,test,check_in,2027-08-27,2027-08-27,match,cehck-in on 27/08/2027
+C033,G21,test,check_out,2027-09-07,2027-09-07,match,check-out on 7 September 2027
+C033,G21,test,room,Suite,Deluxe Double,mismatch,a deluxe double
+C033,G21,test,guests,2,2,match,two guests
+C033,G21,test,meal,BB,,missing,
+C034,G22,train,check_in,2027-04-13,2027-04-13,match,check-in on 13/04/2027
+C034,G22,train,check_out,2027-04-16,2027-04-16,match,check-out on 16 April 2027
+C034,G22,train,room,Standard Twin,Standard Twin,match,standard twin room
+C034,G22,train,guests,2,3,mismatch,three guests
+C034,G22,train,meal,FB,AI,mismatch,all inclusive
+C035,G23,train,check_in,2027-07-01,2027-07-01,match,check-in on 1 July 2027
+C035,G23,train,check_out,2027-07-13,,missing,
+C035,G23,train,room,Suite,,ambiguous,"a double or twin room, to be assigned on arrival"
+C035,G23,train,guests,3,2,mismatch,two guests
+C035,G23,train,meal,BB,,ambiguous,breakfast can be added at an extra charge
+C036,G24,test,check_in,2027-07-23,,missing,
+C036,G24,test,check_out,2027-07-24,2027-07-24,match,check-out on 2027-07-24
+C036,G24,test,room,Family Room,Family Room,match,family room
+C036,G24,test,guests,3,3,match,three guests
+C036,G24,test,meal,FB,HB,mismatch,breakfast and dinner included
+C037,G25,train,check_in,2027-06-27,2027-06-27,match,check-in on 2027-06-27
+C037,G25,train,check_out,2027-07-06,2027-07-06,match,check-out on 6 July 2027
+C037,G25,train,room,Single,Single,match,a single room
+C037,G25,train,guests,3,2,mismatch,two guests
+C037,G25,train,meal,RO,RO,match,room only
+C038,G26,test,check_in,2027-02-06,2027-02-06,match,check-in on 6 February 2027
+C038,G26,test,check_out,2027-02-16,2027-02-18,mismatch,check-out on 18/02/2027
+C038,G26,test,room,Single,Single,match,a single room
+C038,G26,test,guests,1,1,match,one guest
+C038,G26,test,meal,HB,HB,match,half board
+C039,G27,val,check_in,2027-09-13,,missing,
+C039,G27,val,check_out,2027-09-17,2027-09-17,match,check-out on 17/09/2027
+C039,G27,val,room,Family Room,,missing,
+C039,G27,val,guests,4,,missing,
+C039,G27,val,meal,RO,FB,mismatch,full board
+C040,G28,val,check_in,2027-10-16,2027-10-16,match,check-in on 2027-10-16
+C040,G28,val,check_out,2027-10-22,,missing,
+C040,G28,val,room,Standard Twin,Standard Twin,match,standard twin room
+C040,G28,val,guests,3,3,match,three guests
+C040,G28,val,meal,RO,RO,match,without meals
+C041,G29,train,check_in,2027-01-19,,missing,
+C041,G29,train,check_out,2027-01-23,2027-01-21,mismatch,check-out on 21 January 2027
+C041,G29,train,room,Suite,,ambiguous,"a double or twin room, to be assigned on arrival"
+C041,G29,train,guests,4,,missing,
+C041,G29,train,meal,AI,AI,match,all inclusive
+C042,G30,train,check_in,2027-01-25,2027-01-25,match,check-in on 25 January 2027
+C042,G30,train,check_out,2027-01-30,2027-01-30,match,check-out on 30 January2 027
+C042,G30,train,room,Standard Double,Family Room,mismatch,family room
+C042,G30,train,guests,2,2,match,two guests
+C042,G30,train,meal,RO,AI,mismatch,all inclusive
+C043,G31,val,check_in,2027-08-14,2027-08-14,match,check-in on 2027-08-14
+C043,G31,val,check_out,2027-08-25,2027-08-25,match,check-out on 25 August 2027
+C043,G31,val,room,Single,Family Room,mismatch,faimly room
+C043,G31,val,guests,2,,missing,
+C043,G31,val,meal,BB,BB,match,bed and breakfast
+C044,G32,train,check_in,2027-06-15,2027-06-15,match,check-in on 15 Jnue 2027
+C044,G32,train,check_out,2027-06-18,2027-06-21,mismatch,check-out on 21 June 2027
+C044,G32,train,room,Family Room,Family Room,match,family room
+C044,G32,train,guests,3,3,match,three guests
+C044,G32,train,meal,RO,RO,match,without meals
+C045,G33,val,check_in,2027-01-15,2027-01-15,match,check-in on 15 January 2027
+C045,G33,val,check_out,2027-01-21,2027-01-21,match,check-out on 21/01/2027
+C045,G33,val,room,Suite,Suite,match,junior suite
+C045,G33,val,guests,2,3,mismatch,three guests
+C045,G33,val,meal,FB,,ambiguous,breakfast can be adedd at an extra charge
+C046,G34,train,check_in,2027-08-16,2027-08-16,match,check-in on 2027-08-16
+C046,G34,train,check_out,2027-08-26,2027-08-26,match,check-out on 26 August 2027
+C046,G34,train,room,Standard Double,Single,mismatch,a single room
+C046,G34,train,guests,1,2,mismatch,two guests
+C046,G34,train,meal,BB,BB,match,bed and breakfast
+C047,G35,test,check_in,2027-05-31,,missing,
+C047,G35,test,check_out,2027-06-12,2027-06-12,match,check-out on 2027-06-12
+C047,G35,test,room,Family Room,Single,mismatch,single room
+C047,G35,test,guests,2,2,match,two guests
+C047,G35,test,meal,HB,,ambiguous,breakfast can be added at an extra charge
+C048,G36,train,check_in,2027-03-31,2027-03-31,match,check-in on 31 March 2027
+C048,G36,train,check_out,2027-04-09,2027-04-09,match,check-out on 9 April 2027
+C048,G36,train,room,Deluxe Double,Suite,mismatch,a suite
+C048,G36,train,guests,1,,missing,
+C048,G36,train,meal,AI,AI,match,all-inclusive package
+C049,G37,train,check_in,2027-09-17,2027-09-17,match,check-in on 17/09/2027
+C049,G37,train,check_out,2027-09-23,2027-09-24,mismatch,check-out on 2027-09-24
+C049,G37,train,room,Deluxe Double,Deluxe Double,match,deluxe double room
+C049,G37,train,guests,2,2,match,two guests
+C049,G37,train,meal,AI,AI,match,all inclusive
+C050,G38,test,check_in,2027-02-21,2027-02-24,mismatch,check-ino n 24/02/2027
+C050,G38,test,check_out,2027-02-23,2027-02-23,match,chekc-out on 2027-02-23
+C050,G38,test,room,Standard Twin,,missing,
+C050,G38,test,guests,2,3,mismatch,three guests
+C050,G38,test,meal,RO,RO,match,room only
+C051,G39,train,check_in,2027-06-24,2027-06-24,match,check-in on 24 June 2027
+C051,G39,train,check_out,2027-07-04,,missing,
+C051,G39,train,room,Standard Twin,Standard Twin,match,a standard twin
+C051,G39,train,guests,1,1,match,one guest
+C051,G39,train,meal,RO,RO,match,without meals
+C052,G40,train,check_in,2027-02-01,2027-02-01,match,check-in on 1 February 2027
+C052,G40,train,check_out,2027-02-09,2027-02-09,match,check-out on 9 February 2027
+C052,G40,train,room,Family Room,Family Room,match,a family room
+C052,G40,train,guests,2,2,match,two guests
+C052,G40,train,meal,RO,FB,mismatch,all three meals included
+C053,G41,train,check_in,2027-07-06,2027-07-06,match,check-in on 6 July 2027
+C053,G41,train,check_out,2027-07-08,2027-07-08,match,check-out on 8 July 2027
+C053,G41,train,room,Family Room,Suite,mismatch,a suite
+C053,G41,train,guests,4,5,mismatch,five guests
+C053,G41,train,meal,RO,RO,match,without meals
+C054,G42,test,check_in,2027-09-22,2027-09-22,match,check-in on 2027-09-22
+C054,G42,test,check_out,2027-09-27,2027-09-27,match,check-out on 27 September 2027
+C054,G42,test,room,Deluxe Double,,ambiguous,"a double or twin room, to be assigned on arrival"
+C054,G42,test,guests,2,2,match,two guests
+C054,G42,test,meal,RO,AI,mismatch,all inclusive
+C055,G43,train,check_in,2027-10-19,2027-10-20,mismatch,check-in on 20O ctober 2027
+C055,G43,train,check_out,2027-10-26,2027-10-26,match,check-out no 26/10/2027
+C055,G43,train,room,Deluxe Double,Suite,mismatch,junior suite
+C055,G43,train,guests,1,1,match,one guest
+C055,G43,train,meal,HB,HB,match,breakfats and dinner included
+C056,G44,val,check_in,2027-01-26,2027-01-26,match,check-in on 26/01/2027
+C056,G44,val,check_out,2027-02-07,2027-02-05,mismatch,check-out on 5 February 2027
+C056,G44,val,room,Deluxe Double,,missing,
+C056,G44,val,guests,3,3,match,three guests
+C056,G44,val,meal,AI,AI,match,all inclusive
+C057,G45,val,check_in,2027-01-19,2027-01-19,match,check-in on 19 January 2027
+C057,G45,val,check_out,2027-01-22,,missing,
+C057,G45,val,room,Family Room,Family Room,match,family room
+C057,G45,val,guests,3,3,match,three guests
+C057,G45,val,meal,RO,,ambiguous,breakfast can be added at an extra charge
+C058,G46,train,check_in,2027-02-05,2027-02-04,mismatch,check-in on 2027-02-04
+C058,G46,train,check_out,2027-02-13,,missing,
+C058,G46,train,room,Single,,missing,
+C058,G46,train,guests,2,2,match,two guests
+C058,G46,train,meal,FB,,missing,
+C059,G47,train,check_in,2027-04-16,,missing,
+C059,G47,train,check_out,2027-04-22,2027-04-22,match,check-out on 22 April 2027
+C059,G47,train,room,Standard Twin,,ambiguous,"a double or twin room, to be assigned on arrival"
+C059,G47,train,guests,4,4,match,four guests
+C059,G47,train,meal,HB,HB,match,half board
+C060,G48,train,check_in,2027-10-03,2027-10-03,match,check-in on 3 October 2027
+C060,G48,train,check_out,2027-10-12,,missing,
+C060,G48,train,room,Standard Double,Standard Double,match,standard double room
+C060,G48,train,guests,3,4,mismatch,four guests
+C060,G48,train,meal,RO,FB,mismatch,full board
