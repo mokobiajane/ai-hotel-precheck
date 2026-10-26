@@ -1,7 +1,8 @@
 import random, json, csv, re, itertools, datetime as dt
 from collections import Counter, defaultdict
 random.seed(2026)
-OUT="/mnt/user-data/outputs/hw3_sample/"
+import os
+OUT=os.path.dirname(os.path.abspath(__file__))+os.sep
 ROOMS={"Standard Double":["standard double room","double room (standard)","a standard double"],
 "Standard Twin":["standard twin room","twin room (standard)","a standard twin"],
 "Deluxe Double":["deluxe double room","a deluxe double"],

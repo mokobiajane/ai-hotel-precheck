@@ -1,6 +1,7 @@
 import json, csv, random, math, datetime as dt
 from collections import Counter, defaultdict
-OUT="/mnt/user-data/outputs/hw3_sample/"
+import os
+OUT=os.path.dirname(os.path.abspath(__file__))+os.sep
 cases=[json.loads(l) for l in open(OUT+"raw_cases.jsonl",encoding="utf-8")]
 F=["check_in","check_out","room","guests","meal"]
 rep={}
