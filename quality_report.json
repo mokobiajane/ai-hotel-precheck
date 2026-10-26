@@ -1,0 +1,159 @@
+{
+ "n_cases": 60,
+ "n_groups": 48,
+ "n_labels": 300,
+ "status_by_field": {
+  "check_in": {
+   "missing": 9,
+   "match": 43,
+   "mismatch": 5,
+   "ambiguous": 3
+  },
+  "check_out": {
+   "mismatch": 12,
+   "ambiguous": 2,
+   "match": 34,
+   "missing": 12
+  },
+  "room": {
+   "mismatch": 11,
+   "ambiguous": 8,
+   "match": 34,
+   "missing": 7
+  },
+  "guests": {
+   "mismatch": 15,
+   "match": 33,
+   "ambiguous": 4,
+   "missing": 8
+  },
+  "meal": {
+   "match": 29,
+   "mismatch": 16,
+   "missing": 9,
+   "ambiguous": 6
+  }
+ },
+ "status_total": {
+  "missing": 45,
+  "match": 173,
+  "mismatch": 59,
+  "ambiguous": 23
+ },
+ "null_by_style": {
+  "formal|check_in": [
+   6,
+   34
+  ],
+  "formal|check_out": [
+   8,
+   34
+  ],
+  "formal|room": [
+   8,
+   34
+  ],
+  "formal|guests": [
+   8,
+   34
+  ],
+  "formal|meal": [
+   7,
+   34
+  ],
+  "short|check_in": [
+   6,
+   26
+  ],
+  "short|check_out": [
+   6,
+   26
+  ],
+  "short|room": [
+   7,
+   26
+  ],
+  "short|guests": [
+   4,
+   26
+  ],
+  "short|meal": [
+   8,
+   26
+  ]
+ },
+ "null_by_style_total": {
+  "formal": [
+   37,
+   170,
+   0.218
+  ],
+  "short": [
+   31,
+   130,
+   0.238
+  ]
+ },
+ "null_overall": [
+  68,
+  300,
+  0.227
+ ],
+ "label_errors": [],
+ "logic_violations": [
+  "C052"
+ ],
+ "stay_days": {
+  "min": 1,
+  "max": 12,
+  "mean": 6.55
+ },
+ "guests": {
+  "3": 13,
+  "1": 13,
+  "2": 25,
+  "4": 9
+ },
+ "text_len": {
+  "min": 52,
+  "max": 229
+ },
+ "exact_dup_texts": 0,
+ "near_dup_pairs_jaccard>=0.8": 0,
+ "near_dup_detail": [],
+ "groups_with_2_replies": 12,
+ "split_cases": {
+  "train": 33,
+  "val": 13,
+  "test": 14
+ },
+ "status_by_split": {
+  "train": {
+   "missing": 24,
+   "mismatch": 30,
+   "match": 99,
+   "ambiguous": 12
+  },
+  "val": {
+   "mismatch": 12,
+   "match": 36,
+   "ambiguous": 6,
+   "missing": 11
+  },
+  "test": {
+   "match": 38,
+   "mismatch": 17,
+   "ambiguous": 5,
+   "missing": 10
+  }
+ },
+ "test_ambiguous_by_field": {
+  "guests": 2,
+  "room": 1,
+  "check_in": 1,
+  "meal": 1
+ },
+ "all_match_cases": 6,
+ "cases_without_any_problem_field": 6,
+ "cases_with_typo_candidates": "n/a"
+}
