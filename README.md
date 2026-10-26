@@ -1,0 +1,1 @@
+# ai-hotel-precheck
